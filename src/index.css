@@ -1,0 +1,35 @@
+/* Import Tailwind CSS (Version 4) */
+@import "tailwindcss";
+
+/* Global Base Styles */
+html {
+  /* Enables smooth scrolling when clicking navbar links */
+  scroll-behavior: smooth; 
+  
+  /* Offsets the scroll position to prevent the fixed navbar from overlapping section headers */
+  scroll-padding-top: 100px;
+  
+  /* Sets the default background to dark charcoal (zinc-950) to prevent white flashing on reload */
+  background-color: #09090b; 
+  
+  /* Sets default text color to white */
+  color: #ffffff; 
+}
+
+/* Hide scrollbar for a cleaner cinematic look (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46; /* zinc-700 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b; /* amber-500 */
+}
