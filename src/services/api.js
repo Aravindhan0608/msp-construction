@@ -1,7 +1,7 @@
 // Base URL for the backend API. Configure via .env (VITE_API_URL) so the
 // same build can point at localhost in development and a real domain in
 // production, instead of a hardcoded "http://localhost:5000".
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://msp-construction-backend.onrender.com/api';
 
 class ApiRequestError extends Error {
   constructor(message, status) {
